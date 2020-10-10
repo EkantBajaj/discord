@@ -4,11 +4,8 @@ from g_search import google_search
 from presistence import update_history,show_history,setup_db
 
 import discord
-from dotenv import load_dotenv
 
-load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
 
@@ -53,4 +50,3 @@ async def on_message(message):
 
 client.run(TOKEN)
 
-client.run(TOKEN)
